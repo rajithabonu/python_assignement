@@ -1,0 +1,6 @@
+def find_common_values(arr1, arr2):
+
+    return list(set(arr1) & set(arr2))
+my_array = [1, 2, 3, 4, 5, 2, 6, 7, 8, 1, 9]
+my_array2 = [2,4,6,8,10,12,14]
+print("Common values between two arrays:", find_common_values(my_array, my_array2))

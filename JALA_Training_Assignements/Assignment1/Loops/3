@@ -1,0 +1,4 @@
+def equality_operators(a, b):
+    print(f"{a} == {b}: {a == b}")
+    print(f"{a} != {b}: {a != b}")
+equality_operators(5, 10)

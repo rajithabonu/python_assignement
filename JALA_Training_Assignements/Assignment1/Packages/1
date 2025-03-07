@@ -1,0 +1,37 @@
+# File: my_package/class_a.py
+class ClassA:
+    def _init_(self, name):
+        self.name = name
+
+    def method_a(self):
+        return f"Hello from ClassA, {self.name}!"
+
+# File: my_package/class_b.py
+class ClassB:
+    def _init_(self, value):
+        self.value = value
+
+    def method_b(self):
+        return f"The value in ClassB is: {self.value}"
+
+# File: my_package/_init_.py
+# (This file can be empty, or you can add package-level initialization)
+from .class_a import ClassA
+from .class_b import ClassB
+
+# Creating objects and calling methods
+obj_a = ClassA("Alice")
+result_a = obj_a.method_a()
+print(result_a)
+
+obj_b = ClassB(42)
+result_b = obj_b.method_b()
+print(result_b)
+
+# File structure:
+
+# my_package/
+#   _init_.py
+#   class_a.py
+#   class_b.py
+# main.py 

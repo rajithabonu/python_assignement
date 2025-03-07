@@ -1,0 +1,6 @@
+string2 = "hello, world"
+string1 = "HELLO, WORLD"
+uppercase_string = string2.upper()
+lowercase_string = string1.lower()
+print("Uppercase:", uppercase_string)
+print("Lowercase:", lowercase_string)

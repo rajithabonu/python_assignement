@@ -1,0 +1,6 @@
+def remove_duplicates(arr):
+
+    return list(set(arr))
+my_array = [1, 2, 3, 4, 5, 2, 6, 7, 8, 1, 9]
+my_array2 = [2,4,6,8,10,12,14]
+print(" Removed duplicates:", remove_duplicates(my_array))

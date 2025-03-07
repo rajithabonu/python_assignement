@@ -1,0 +1,9 @@
+def find_largest(a, b, c):
+    largest = a
+    if b > largest:
+        largest = b
+    if c > largest:
+        largest = c
+    print(f"Largest number: {largest}")
+
+find_largest(10, 25, 15)

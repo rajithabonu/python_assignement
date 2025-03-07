@@ -1,0 +1,10 @@
+def remove_element(arr, element):
+    new_arr = arr[:]  # Create a copy to avoid modifying the original
+    try:
+        new_arr.remove(element)
+        return new_arr
+    except ValueError:
+        return arr #returns original array if element not found
+my_array = [1, 2, 3, 4, 5, 2, 6, 7, 8, 1, 9]
+my_array2 = [2,4,6,8,10,12,14]
+print("Array after removing 2:", remove_element(my_array, 2))

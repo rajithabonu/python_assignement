@@ -1,0 +1,26 @@
+# Same module (Package 1)
+class Parent:
+    def __init__(self):
+        self._protected_field = "I am Protected"
+
+    def _protected_method(self):
+        print("This is a Protected Method")
+
+class SamePackageClass:
+    def access_protected(self):
+        obj = Parent()
+        print(obj._protected_field) 
+        obj._protected_method()  
+
+class Child(Parent):  # Subclass in same module
+    def access_protected_from_child(self):
+        print(self._protected_field)  
+        self._protected_method()  
+
+# Main method
+if __name__ == "__main__":
+    same_package = SamePackageClass()
+    same_package.access_protected()
+
+    child_obj = Child()
+    child_obj.access_protected_from_child()

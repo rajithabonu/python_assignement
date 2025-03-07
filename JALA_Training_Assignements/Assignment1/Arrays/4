@@ -1,0 +1,7 @@
+
+def contains_value(arr, value):
+    """4. Tests if array contains a specific value."""
+    return value in arr
+my_array = [1, 2, 3, 4, 5, 2, 6, 7, 8, 1, 9]
+my_array2 = [2,4,6,8,10,12,14]
+print("Contains 6:", contains_value(my_array, 6))

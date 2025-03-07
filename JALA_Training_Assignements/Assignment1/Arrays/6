@@ -1,0 +1,5 @@
+def copy_array(arr):
+    return arr[:]  # Create a shallow copy
+my_array = [1, 2, 3, 4, 5, 2, 6, 7, 8, 1, 9]
+my_array2 = [2,4,6,8,10,12,14]
+print("Copied array:", copy_array(my_array))

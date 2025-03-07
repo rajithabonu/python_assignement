@@ -1,0 +1,11 @@
+class Example:
+    def show(self, a, b=None):  # Method with default parameter
+        if b is None:
+            print(f"Single Parameter: {a}")
+        else:
+            print(f"Two Parameters: {a}, {b}")
+
+# Call methods
+obj = Example()
+obj.show(10)       # Calls the single-parameter version
+obj.show(10, 20)   # Calls the two-parameter version

@@ -1,0 +1,12 @@
+def find_second_largest(arr):
+    
+    if len(arr) < 2:
+        return None
+    unique_sorted = sorted(list(set(arr)), reverse=True)
+    if len(unique_sorted) < 2:
+        return None
+    return unique_sorted[1]
+
+my_array = [1, 2, 3, 4, 5, 2, 6, 7, 8, 1, 9]
+my_array2 = [2,4,6,8,10,12,14]
+print("Second largest:", find_second_largest(my_array))

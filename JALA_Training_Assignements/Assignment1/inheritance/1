@@ -1,0 +1,68 @@
+class A:  # Superclass
+    def method1(self):
+        print("Method1 in Class A")
+
+    def method2(self):
+        print("Method2 in Class A")
+
+    def override_method(self):
+        print("Overridden Method in Class A")
+
+class B(A):  # Subclass of A
+    def method3(self):
+        print("Method3 in Class B")
+
+    def method4(self):
+        print("Method4 in Class B")
+
+    def override_method(self):
+        print("Overridden Method in Class B")
+
+class C(B):  # Subclass of B
+    def method5(self):
+        print("Method5 in Class C")
+
+    def method6(self):
+        print("Method6 in Class C")
+
+    def override_method(self):
+        print("Overridden Method in Class C")
+
+# Main method
+if __name__ == "__main__":
+    objA = A()
+    objB = B()
+    objC = C()
+
+    # Calling all methods with respective class instances
+    print("Calling methods from Class A:")
+    objA.method1()
+    objA.method2()
+    objA.override_method()
+    
+    print("\nCalling methods from Class B:")
+    objB.method1()
+    objB.method2()
+    objB.method3()
+    objB.method4()
+    objB.override_method()
+    
+    print("\nCalling methods from Class C:")
+    objC.method1()
+    objC.method2()
+    objC.method3()
+    objC.method4()
+    objC.method5()
+    objC.method6()
+    objC.override_method()
+    
+    # Calling overridden method with superclass reference
+    print("\nCalling overridden methods using superclass reference:")
+    ref = A()  # Reference of Superclass
+    ref.override_method()  # Calls A’s method
+
+    ref = B()  # Reference of Superclass pointing to B’s object
+    ref.override_method()  # Calls B’s method
+
+    ref = C()  # Reference of Superclass pointing to C’s object
+    ref.override_method()  # Calls C’s method

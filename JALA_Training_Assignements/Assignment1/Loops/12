@@ -1,0 +1,10 @@
+def print_gender_switch(gender):
+    if gender.upper() == 'M':
+        print("Male")
+    elif gender.upper() == 'F':
+        print("Female")
+    else:
+        print("Invalid gender input.")
+print_gender_switch('m')
+print_gender_switch('F')
+print_gender_switch('X')

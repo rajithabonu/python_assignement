@@ -1,0 +1,12 @@
+def find_duplicates(arr):
+    
+    duplicates = []
+    seen = set()
+    for item in arr:
+        if arr.count(item) > 1 and item not in seen:
+            duplicates.append(item)
+            seen.add(item)
+    return duplicates
+my_array = [1, 2, 3, 4, 5, 2, 6, 7, 8, 1, 9]
+my_array2 = [2,4,6,8,10,12,14]
+print(" Duplicates:", find_duplicates(my_array))

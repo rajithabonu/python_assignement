@@ -1,0 +1,7 @@
+def sum_array_elements(arr):
+ 
+    return sum(arr)
+my_array = [1, 2, 3, 4, 5, 2, 6, 7, 8, 1, 9]
+my_array2 = [2,4,6,8,10,12,14]
+print(" Sum:", sum_array_elements(my_array))
+

@@ -1,0 +1,15 @@
+class MyClass:
+    # Default Constructor
+    def __init__(self, arg1=None, arg2=None):
+        if arg1 is None and arg2 is None:
+            print("Default Constructor Called")
+        elif arg2 is None:
+            print(f"One Argument Constructor Called with arg1 = {arg1}")
+        else:
+            print(f"Two Argument Constructor Called with arg1 = {arg1}, arg2 = {arg2}")
+
+# Main class to instantiate and call all constructors
+if __name__ == "__main__":
+    obj1 = MyClass()  # Default constructor
+    obj2 = MyClass(10)  # One argument constructor
+    obj3 = MyClass(10, 20)  # Two argument constructor

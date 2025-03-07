@@ -1,0 +1,12 @@
+from abc import ABC, abstractmethod
+
+class AbstractClass(ABC):  # Abstract Class
+    def __init__(self):
+        self.message = "This is a Non-Abstract Method"
+
+    @abstractmethod
+    def abstract_method(self):  # Abstract Method
+        pass
+
+    def non_abstract_method(self):  # Non-Abstract Method
+        print(self.message)

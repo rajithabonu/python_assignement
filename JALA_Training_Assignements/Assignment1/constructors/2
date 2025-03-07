@@ -1,0 +1,12 @@
+class Parent:
+    def __init__(self, value=0):
+        print(f"Parent Constructor Called with value = {value}")
+
+class Child(Parent):
+    def __init__(self, value1=0, value2=0):
+        super().__init__(value1)  # Calling Parent Constructor
+        print(f"Child Constructor Called with value = {value2}")
+
+# Instantiate Child class
+if __name__ == "__main__":
+    obj = Child(10, 20)

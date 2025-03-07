@@ -1,0 +1,10 @@
+class Example:
+    def show(self, a, b):
+        print(f"Method 1: {a + b}")
+
+    def show(self, a, b):  # This will override the previous method
+        print(f"Method 2: {a * b}")
+
+# Call method
+obj = Example()
+obj.show(5, 3)  # Calls the last defined method

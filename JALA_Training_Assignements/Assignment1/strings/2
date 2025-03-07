@@ -1,0 +1,5 @@
+string1 = "Hello, World!"  
+string2 = 'Python is fun' 
+
+str_concat = string1 + " " + string2
+print("Concatenation:", str_concat)

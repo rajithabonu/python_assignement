@@ -1,0 +1,10 @@
+from parent_package import Parent  # Importing Parent from another module
+
+class OtherPackageClass(Parent):
+    def access_protected_from_other_package(self):
+        print(self._protected_field)  
+        self._protected_method() 
+
+if __name__ == "__main__":
+    obj = OtherPackageClass()
+    obj.access_protected_from_other_package()

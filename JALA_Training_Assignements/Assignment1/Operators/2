@@ -1,0 +1,15 @@
+def increment_decrement(value, operation):
+  
+  if operation == "++":
+    return value + 1
+  elif operation == "--":
+    return value - 1
+  else:
+    return None
+x = 5
+
+x = increment_decrement(x, "++")
+print(f"After increment: {x}")
+
+
+

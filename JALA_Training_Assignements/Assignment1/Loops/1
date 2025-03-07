@@ -1,0 +1,6 @@
+
+def print_bright_it_career_for():
+    for _ in range(10):
+        print("Bright IT Career")
+print_bright_it_career_for()
+

@@ -1,0 +1,11 @@
+class Example:
+    def display(self, a):
+        if isinstance(a, int):
+            print(f"Integer Method: {a * 2}")
+        elif isinstance(a, str):
+            print(f"String Method: {a.upper()}")
+
+# Call methods
+obj = Example()
+obj.display(10)        # Calls the integer version
+obj.display("hello")   # Calls the string version

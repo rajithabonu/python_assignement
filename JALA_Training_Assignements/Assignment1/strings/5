@@ -1,0 +1,7 @@
+string1 = "Hello, World"
+
+try:
+    index = string1.index("World")
+    print(" Index of 'World':", index)
+except ValueError:
+    print("'World' not found.")

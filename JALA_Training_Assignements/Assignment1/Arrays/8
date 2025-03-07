@@ -1,0 +1,9 @@
+def min_max_array(arr):
+   
+    if not arr:
+        return None, None #Handle empty array
+    return min(arr), max(arr)
+my_array = [1, 2, 3, 4, 5, 2, 6, 7, 8, 1, 9]
+my_array2 = [2,4,6,8,10,12,14]
+
+print("Min and Max:", min_max_array(my_array))

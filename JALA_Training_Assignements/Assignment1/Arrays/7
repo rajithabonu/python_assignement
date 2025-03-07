@@ -1,0 +1,10 @@
+
+def insert_element(arr, element, position):
+    
+    new_arr = arr[:]
+    new_arr.insert(position, element)
+    return new_arr
+my_array = [1, 2, 3, 4, 5, 2, 6, 7, 8, 1, 9]
+my_array2 = [2,4,6,8,10,12,14]
+print(" Array after inserting 10 at index 2:", insert_element(my_array, 10, 2))
+

@@ -1,0 +1,3 @@
+string_trim = "   Trim me   "
+trimmed_string = string_trim.strip()
+print(" Trimmed:", trimmed_string)

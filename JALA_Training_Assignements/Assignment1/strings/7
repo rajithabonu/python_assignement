@@ -1,0 +1,8 @@
+string_compare1 = "apple"
+string_compare2 = "banana"
+string_compare3 = "apple"
+
+print("Comparing 'apple' and 'banana':", string_compare1 == string_compare2)
+print("Comparing 'apple' and 'apple':", string_compare1 == string_compare3)
+
+

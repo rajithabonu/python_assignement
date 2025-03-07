@@ -1,0 +1,43 @@
+class A:  # Superclass
+    def __init__(self):
+        self.var = "Variable in Class A"
+
+    def show_variable(self):
+        print(self.var)
+
+class B(A):  # Subclass of A
+    def __init__(self):
+        super().__init__()
+        self.var = "Variable in Class B"  # Overriding the instance variable
+
+class C(B):  # Subclass of B
+    def __init__(self):
+        super().__init__()
+        self.var = "Variable in Class C"  # Overriding the instance variable
+
+# Main method
+if __name__ == "__main__":
+    objA = A()
+    objB = B()
+    objC = C()
+
+    # Calling show_variable method to check variable values
+    print("Instance Variable in Class A:")
+    objA.show_variable()
+
+    print("\nInstance Variable in Class B:")
+    objB.show_variable()
+
+    print("\nInstance Variable in Class C:")
+    objC.show_variable()
+
+    # Calling overridden data members using superclass reference
+    print("\nAccessing overridden instance variables using superclass reference:")
+    ref = A()
+    ref.show_variable()  # Shows A’s variable
+
+    ref = B()
+    ref.show_variable()  # Shows B’s variable
+
+    ref = C()
+    ref.show_variable()  # Shows C’s variable

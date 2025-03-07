@@ -1,0 +1,9 @@
+class MyClass:
+    static_var = 10  
+
+
+obj1 = MyClass()
+obj1.static_var = 20  
+
+print(MyClass.static_var) 
+print(obj1.static_var) 

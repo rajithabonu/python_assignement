@@ -1,0 +1,14 @@
+def find_min_max(num1, num2):
+    
+    if num1 < num2:
+        smaller = num1
+        larger = num2
+    else:
+        smaller = num2
+        larger = num1
+    print(f"Smaller number: {smaller}")
+    print(f"Larger number: {larger}")
+
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+find_min_max(num1, num2)

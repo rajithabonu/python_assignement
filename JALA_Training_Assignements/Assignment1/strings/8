@@ -1,0 +1,7 @@
+string1 = "Hello, World!"  
+string2 = 'Python is fun'
+
+print("Starts with 'Hello':", string1.startswith("Hello"))
+print("Ends with '!':", string1.endswith("!"))
+
+

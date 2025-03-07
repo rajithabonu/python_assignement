@@ -1,0 +1,23 @@
+class Parent:
+    def __init__(self):
+        self.__private_field = "I am Private"  # Private field
+
+    def __private_method(self):  # Private method
+        print("This is a Private Method")
+
+    def access_private(self):  # Public method to access private field & method
+        print(self.__private_field)
+        self.__private_method()
+
+class Child(Parent):
+    def try_access_private(self):
+       
+        print("Cannot access private members of parent class!")
+
+# Main method
+if __name__ == "__main__":
+    obj = Parent()
+    obj.access_private()  # ✅ Accessing private members via a public method
+
+    child_obj = Child()
+    child_obj.try_access_private()  

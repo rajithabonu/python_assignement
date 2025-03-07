@@ -1,0 +1,6 @@
+class CustomException(Exception):
+    def __init__(self, message):
+        super().__init__(message)
+
+# Raise custom exception
+raise CustomException("This is a custom exception!")

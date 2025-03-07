@@ -1,0 +1,9 @@
+def find_index(arr, element):
+ 
+    try:
+        return arr.index(element)
+    except ValueError:
+        return -1  # Return -1 if element not found
+my_array = [1, 2, 3, 4, 5, 2, 6, 7, 8, 1, 9]
+my_array2 = [2,4,6,8,10,12,14]
+print(" Index of 4:", find_index(my_array, 4))

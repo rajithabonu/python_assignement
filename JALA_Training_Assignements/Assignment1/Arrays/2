@@ -1,0 +1,10 @@
+def average_array_elements(arr):
+  
+    if not arr:
+        return 0  # Handle empty array case
+    return sum(arr) / len(arr)
+my_array = [1, 2, 3, 4, 5, 2, 6, 7, 8, 1, 9]
+my_array2 = [2,4,6,8,10,12,14]
+
+print("Average:", average_array_elements(my_array))
+

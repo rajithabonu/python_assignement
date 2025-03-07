@@ -1,0 +1,7 @@
+string1 = "Hello, World"
+pattern = r"Hello"
+match = re.match(pattern, string1)
+if match:
+    print("6. Match found:", match.group())
+else:
+    print("6. No match found.")

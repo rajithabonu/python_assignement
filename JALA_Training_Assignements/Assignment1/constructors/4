@@ -1,0 +1,16 @@
+class Person:
+    def __init__(self, name, age):
+        self.name = name  # Public attribute
+        self.age = age  # Public attribute
+        self.__salary = 50000  # Private attribute
+
+    def display(self):
+        print(f"Name: {self.name}, Age: {self.age}")
+
+# Instantiate object
+if __name__ == "__main__":
+    person1 = Person("Alice", 30)
+    person1.display()
+
+    print(person1.name)
+    print(person1.age) 

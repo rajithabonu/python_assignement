@@ -1,0 +1,8 @@
+
+def even_odd_switch(num):
+    if num % 2 == 0:
+        print(f"{num} is EVEN.")
+    else:
+        print(f"{num} is ODD.")
+even_odd_switch(10)
+even_odd_switch(7)

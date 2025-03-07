@@ -1,0 +1,12 @@
+class ChildClass(AbstractClass):  # Subclass of AbstractClass
+    def abstract_method(self):  # Implementing abstract method
+        print("Implementation of Abstract Method in Child Class")
+
+    def call_non_abstract_method(self):
+        obj = ChildClass()  # Creating an instance of ChildClass inside ChildClass
+        obj.non_abstract_method()  # Calling non-abstract method
+
+# Main method
+if __name__ == "__main__":
+    obj = ChildClass()
+    obj.call_non_abstract_method()

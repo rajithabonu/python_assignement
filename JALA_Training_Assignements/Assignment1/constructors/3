@@ -1,0 +1,15 @@
+class Example:
+    def __init__(self):  # Public constructor
+        print("Public Constructor Called")
+
+    def _protected_constructor(self):  # Protected method (simulated protected constructor)
+        print("Protected Constructor Called")
+
+    def __private_constructor(self):  # Private method (simulated private constructor)
+        print("Private Constructor Called")
+
+# Instantiate class
+if __name__ == "__main__":
+    obj = Example()  # Calls Public constructor
+    obj._protected_constructor()  # Allowed but discouraged
+    # obj.__private_constructor()  

@@ -1,0 +1,5 @@
+def check_value(value):
+    if value < 0:
+        raise ValueError("Negative values are not allowed!")
+
+check_value(-5)  

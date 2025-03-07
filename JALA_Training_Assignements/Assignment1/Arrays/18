@@ -1,0 +1,11 @@
+def remove_duplicates_return_new(arr):
+    
+    seen = []
+    for item in arr:
+        if item not in seen:
+            seen.append(item)
+    return seen
+
+my_array = [1, 2, 3, 4, 5, 2, 6, 7, 8, 1, 9]
+my_array2 = [2,4,6,8,10,12,14]
+print("Removed duplicates new array:", remove_duplicates_return_new(my_array))

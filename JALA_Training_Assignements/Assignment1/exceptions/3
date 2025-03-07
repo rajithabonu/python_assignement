@@ -1,0 +1,4 @@
+def divide():
+    raise ZeroDivisionError("Custom Division by Zero Error")
+
+divide()  
